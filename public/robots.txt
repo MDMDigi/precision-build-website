@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /404
+Disallow: /*?*id=
+Disallow: /*?*category=
+Disallow: /*?*sector=
+
+Sitemap: https://www.mbfinishtech.com/sitemap.xml
