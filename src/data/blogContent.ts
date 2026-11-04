@@ -1037,11 +1037,11 @@ Before starting automated polishing, inspect the plate for deep handling scratch
 
 The roadmap to $Ra \le 0.2\ \mu\text{m}$ relies on removing the scratch pattern of each stage with a progressively finer abrasive grain, finally flowing the surface metal with compound buffing.
 
-``* **Stage 1: Coarse Planing (P120 Belt)** — Target  \approx 1.5\ \mu\text{m}$
+* **Stage 1: Coarse Planing (P120 Belt)** — Target  \approx 1.5\ \mu\text{m}$
 * **Stage 2: Intermediate Refinement (P240/P320 Belt)** — Target  \approx 0.6\ \mu\text{m}$
 * **Stage 3: Fine Micro-Sanding (P400/P600 Flap)** — Target  \approx 0.35\ \mu\text{m}$
 * **Stage 4: Primary Cutting Buff (Sisal + Green Bar)** — Target  \approx 0.25\ \mu\text{m}$
-* **Stage 5: Optical Mirror Coloring (Cotton + White Bar)** — Target  \le 0.15\ \mu\text{m}$``
+* **Stage 5: Optical Mirror Coloring (Cotton + White Bar)** — Target  \le 0.15\ \mu\text{m}$
 
 ### Phase 1: Coarse Planing and Scale Removal
 * **Tooling**: Coated abrasive belt (Aluminium Oxide or Zirconia grain, P120 grit) mounted on a 70 Shore A serrated rubber contact wheel.
@@ -1172,9 +1172,9 @@ As soon as a pipe enters the gap between these components, it rotates and traver
 
 The heart of every centerless polishing machine is the three-point contact geometry:
 
-``* **1. Grinding Head / Abrasive Belt**: High-speed abrasive belt or wheel spinning at 2,800 RPM delivering tangential cutting velocity ( - 35\text{ m/s}$).
+* **1. Grinding Head / Abrasive Belt**: High-speed abrasive belt or wheel spinning at 2,800 RPM delivering tangential cutting velocity ( - 35\text{ m/s}$).
 * **2. Regulating Wheel**: Rubberized drive wheel spinning at 50 - 300 RPM, tilted at angle $\alpha$ (^\circ\text{ to }6^\circ$) to drive rotation and through-feed.
-* **3. Work-Rest Blade**: Hardened tool steel support blade keeping pipe centerline aligned slightly above wheel centers to prevent vibration.``
+* **3. Work-Rest Blade**: Hardened tool steel support blade keeping pipe centerline aligned slightly above wheel centers to prevent vibration.
 
 ### 1. The High-Speed Grinding Head
 The polishing head is driven by a heavy-duty electric motor ($3.7\text{ kW to }7.5\text{ kW}$ per head) operating at $1,440\text{ to }2,800\text{ RPM}$. It mounts either an abrasive sanding belt running over a contact wheel, a non-woven scotch flap wheel, or a stitched sisal/cotton buffing wheel. This wheel delivers the tangential cutting velocity ($25 - 35\text{ m/s}$) required to grind or polish the metal surface.
