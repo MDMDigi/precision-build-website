@@ -19,75 +19,63 @@ import { Contact } from "@/components/site/Contact";
 
 const CORE_SERVICES = [
   {
-    title: "Dedicated Service Support & Commissioning",
+    title: "Dedicated Polishing Machine Service",
     icon: Wrench,
     badge: "24/7 Field Support",
-    desc: "Our factory-trained service engineers provide complete installation, laser alignment, precision commissioning, and hands-on operator training across India. We minimize machine ramp-up time and keep your production lines operating at peak efficiency.",
+    desc: "Our highly accomplished engineers assess site manufacturing parameters and handle complete setup to ensure you beat production targets ahead of time. We provide reliable polishing machine after sales service for uninterrupted operations.",
     points: [
-      "Precision laser alignment & foundation checks",
-      "On-site installation & PLC integration",
-      "Comprehensive operator & safety training",
-      "Multi-point preventative maintenance audits"
+      "All India polishing machine installation",
+      "Machinery setup and polishing machine commissioning",
+      "Yearly polishing machine maintenance plans",
+      "On-call polishing machine technical support"
     ]
   },
   {
-    title: "All Types of Abrasives & Consumables Supply",
+    title: "Abrasives & Polishing Machine Spare Parts",
     icon: Truck,
-    badge: "Fastest Turnaround",
-    desc: "We supply premium-grade, application-tested abrasives and chemical compounds with express delivery across industrial clusters. Every consumable is calibrated for high heat resistance, minimal shedding, and uniform cutting action.",
+    badge: "Fast Turnaround",
+    desc: "We supply a massive pipeline of abrasive consumables and genuine polishing machine spare parts across India with fast turnaround times. We stock items for high daily volume requirements to keep your supply chain strong.",
     points: [
-      "Heavy-duty sisal, laminated cotton & flannel buffs",
-      "Non-woven flap wheels & abrasive scotch drums",
-      "Ceramic, zirconia & silicon carbide abrasive belts",
-      "Fast-cut green chromium oxide & white finishing bars"
+      "Sisal, Cotton, and Flap wheels stock",
+      "Ready supply of Buffing bars",
+      "Liquid and solid compound variants",
+      "Abrasives paper and cloth backing types"
     ]
   },
   {
-    title: "Pipe ID & OD Machining & Finishing",
+    title: "Pipe ID & OD Machining",
     icon: Cpu,
     badge: "Sub-Micron Precision",
-    desc: "Specialized engineering setups for internal (ID) and external (OD) tube, pipe, and duct finishing. Utilizing our PIP-1000 to PIP-6000 multi-station platforms to achieve sanitary Ra ≤ 0.2 µm on lengths up to 6 meters.",
+    desc: "We build machinery for OD and ID operations combined to run endlessly without heavy upkeep, including our advanced centerless tube polishing machine for steel pipes to heat exchangers, ensuring maximum flexibility.",
     points: [
-      "Sub-micron mirror finishes for tube ID & OD",
-      "Through-feed centerless multi-head polishing",
-      "3-A, ASME BPE & EHEDG sanitary compliance",
-      "Uniform grain and scratch-free consistency"
+      "ID Machining for inside dimensions",
+      "Outer OD fast face grinding",
+      "Smooth finish past line production",
+      "Zero defects pass on the production"
     ]
   },
   {
-    title: "Custom Tooling, Jaws & Vacuum Fixtures",
-    icon: Settings,
-    badge: "Custom Tooling",
-    desc: "When standard clamping or feed tables fail to secure complex workpieces, our design engineering division manufactures bespoke pneumatic chuck jaws, dual-axis dishend contour followers, and perforated vacuum beds (VB150).",
-    points: [
-      "Bespoke pneumatic chuck jaws for thin vessels",
-      "Dual-axis profile followers for dish knuckle radius",
-      "Vacuum tables for thin stainless steel sheets & foils",
-      "Quick-change modular tooling for rapid changeovers"
-    ]
-  },
-  {
-    title: "Automated Fettling & Foundry Solutions",
+    title: "Automated Fettling Solutions",
     icon: Hammer,
     badge: "Heavy-Duty Castings",
-    desc: "Production-ready fettling and grinding systems engineered for heavy iron castings, aluminium die-cast components, and forged structural parts. Eliminate manual chipping and deliver consistent edge profiles.",
+    desc: "We integrate programmable fixtures and an automated fettling machine with 6-axis movement to eliminate the toughest casting marks. This precise process utilizes robotic grinding and polishing systems for strict safety requirements.",
     points: [
-      "Robotic & semi-automated grinding setups",
-      "High-speed flash, riser & gate removal",
-      "Heavy-duty spark & dust containment hoods",
-      "Elimination of operator vibration exposure"
+      "Heavy duty metal removal on cast",
+      "Zero accidents via automation set up",
+      "Burr removal for iron outputs",
+      "Consolidated iron handling units"
     ]
   },
   {
-    title: "Special Purpose Machinery (SPM) Engineering",
+    title: "Custom & Complex Polishing",
     icon: Zap,
-    badge: "Bespoke SPM Engineering",
-    desc: "When off-the-shelf machinery cannot handle your geometry, our Pune engineering center designs and builds turnkey Special Purpose Machines (SPMs) tailored to complex curves, bimetal coils, and automated production cells.",
+    badge: "Special Purpose Machine Manufacturer Pune",
+    desc: "As a specialized special purpose machine manufacturer pune, many custom units are built for highly complex parts. When conducting custom annual repairs, you get the exact tools required for reverse machine engineering.",
     points: [
-      "Bespoke multi-axis servo & PLC motion control",
-      "Integrated wet/dry dust suppression ducting",
-      "Turnkey automotive, aerospace & cookware lines",
-      "Cycle-time optimization and throughput studies"
+      "Reverse CNC detailed settings control",
+      "Expert wire belt grip maintenance",
+      "Cycle time checks and process",
+      "External and internal custom detailing"
     ]
   }
 ];
@@ -115,7 +103,7 @@ const ABRASIVE_ITEMS = [
     desc: "Even scratch pattern distribution for architectural sheets, appliance panels, and decorative elevator skins."
   },
   { 
-    name: "Chromium Oxide Green Compound", 
+    name: "Chromium Oxide Green Polishing Cake", 
     material: "Heavy-cut calcined alumina & Cr2O3", 
     size: "Standard 1 kg solid bars", 
     use: "SS & Titanium Rapid Buffing",
@@ -162,20 +150,20 @@ const SERVICE_STEPS = [
 
 const SERVICES_FAQS = [
   {
+    question: "Do you provide polishing machine after sales service in India?",
+    answer: "Yes, our technicians manage complete polishing machine installation, routine maintenance, and expert polishing machine technical support to keep your operations running without downtime."
+  },
+  {
+    question: "Can we order green polishing cake for metal in bulk?",
+    answer: "Yes, as a dedicated sisal polishing buffs supplier, we stock and deliver bulk quantities of green polishing cake and other abrasive materials directly to your manufacturing facility."
+  },
+  {
+    question: "What automated solutions do you build in Pune?",
+    answer: "Operating as a special purpose machine manufacturer pune, we design automated fettling machine units, robotic grinding and polishing systems, and centerless tube polishing machine setups tailored exactly to your production needs."
+  },
+  {
     question: "What types of preventative maintenance plans (AMC) does M.B. Finishing provide?",
     answer: "We offer tailored Annual Maintenance Contracts (AMC) for single machines or entire finishing lines. Our AMC covers scheduled quarterly visits, spindle runout checks, pneumatic pressure calibration, PLC firmware verification, and discounted priority dispatch for replacement wear parts."
-  },
-  {
-    question: "How quickly can emergency spare parts be dispatched to our manufacturing plant?",
-    answer: "We maintain ready warehouse stock in Bhosari MIDC, Pune, for critical consumables and high-wear components (including contact wheels, polyurethane rollers, drive belts, and pneumatic cylinders). In-stock spares are dispatched within 24 to 48 business hours across industrial corridors in India."
-  },
-  {
-    question: "Can your engineering team optimize finishing cycles for non-standard alloy grades?",
-    answer: "Yes. Our applications laboratory tests exotic and work-hardening alloys including Titanium, Hastelloy, Inconel, Monel, and 2205/2507 Duplex Stainless Steels. We calibrate belt speeds, grain compositions, and contact pressures to eliminate micro-cracking and heat discoloration."
-  },
-  {
-    question: "Do you supply customized abrasive belts and polishing buffs for third-party machines?",
-    answer: "Yes. In addition to supporting M.B. Finishing Technologies machinery, our abrasives division manufactures and supplies custom-dimensioned sisal buffs, laminated cotton mops, flap wheels, and coated belts compatible with all domestic and imported grinding equipment."
   }
 ];
 
@@ -244,11 +232,11 @@ const ServicesPage = () => {
           <div className="container">
             <div className="text-center max-w-3xl mx-auto">
               <div className="industrial-badge mx-auto mb-4">ENGINEERING SUPPORT & SERVICES</div>
-              <h1 className="font-display text-4xl tracking-tight text-stone-950 md:text-5xl font-black uppercase">
-                Surface Finishing & Polishing Services
+              <h1 className="font-display text-3xl sm:text-4xl tracking-tight text-stone-950 md:text-5xl font-black uppercase">
+                SURFACE FINISHING & INDUSTRIAL POLISHING SERVICES
               </h1>
-              <p className="mt-4 text-base text-stone-600 leading-relaxed font-medium">
-                Keep your production running with on-site polishing machine maintenance, precision commissioning, and genuine spare parts across industrial plants in India.
+              <p className="mt-4 text-sm sm:text-base text-stone-600 leading-relaxed font-medium">
+                M.B. Finishing Technologies serves as your dependable partner for superior surface engineering products and comprehensive industrial polishing services across India.
               </p>
               
               <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-stone-600">
@@ -297,9 +285,9 @@ const ServicesPage = () => {
                         </span>
                       </div>
 
-                      <h3 className="font-display text-xl text-stone-950 font-bold uppercase tracking-tight leading-snug">
+                      <h2 className="font-display text-xl text-stone-950 font-bold uppercase tracking-tight leading-snug">
                         {service.title}
-                      </h3>
+                      </h2>
                       
                       <p className="mt-3 text-xs leading-relaxed text-stone-600 font-medium">
                         {service.desc}
@@ -307,6 +295,9 @@ const ServicesPage = () => {
                     </div>
 
                     <div className="mt-6 pt-5 border-t border-black/5">
+                      <h3 className="text-[11px] font-bold uppercase tracking-wider text-primary mb-2.5">
+                        Service Offerings & Capabilities
+                      </h3>
                       <div className="space-y-2">
                         {service.points.map((pt) => (
                           <div key={pt} className="flex items-start gap-2">
@@ -362,10 +353,10 @@ const ServicesPage = () => {
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="industrial-badge mx-auto mb-4">Abrasives & Tooling</div>
               <h2 className="font-display text-3xl md:text-5xl tracking-tight text-stone-950 uppercase font-black">
-                Industrial Abrasives with Fastest Delivery
+                High-Quality Abrasives With Fast Delivery
               </h2>
               <p className="mt-4 text-sm text-muted-foreground md:text-base leading-relaxed">
-                We stock a comprehensive range of premium polishing buffs, wheels, grits, and chemical polishing cakes optimized specifically for automated and manual buffing applications.
+                As a dedicated sisal polishing buffs supplier, we stock a comprehensive range of buffing wheels, abrasive grits, and compounds to suit all in-house commercial metal finishing operations nationwide.
               </p>
             </div>
 
@@ -427,7 +418,7 @@ const ServicesPage = () => {
             <div className="text-center mb-12">
               <div className="industrial-badge mx-auto mb-3">Service FAQs</div>
               <h2 className="font-display text-3xl md:text-4xl text-stone-950 uppercase font-black tracking-tight">
-                Frequently Asked Technical Questions
+                Frequently Asked Questions
               </h2>
               <p className="mt-3 text-sm text-stone-600">
                 Answers to common inquiries regarding our installation, AMC support, and consumable replenishment.

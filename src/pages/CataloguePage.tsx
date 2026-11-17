@@ -18,9 +18,9 @@ import { Contact } from "@/components/site/Contact";
 
 const CATALOGUE_MACHINERY = [
   {
-    category: "Tank & Dishend Polishing Systems",
+    category: "Tank & Dishend Polishing Machinery Specs",
     models: "TPM4500-SDX, TPM3000-SD, TPM2500-SDX, TPM1500-SD",
-    description: "Column & Boom automated systems for cylindrical shells and curved dish ends. Dual-axis tracking for torispherical, elliptical, and hemispherical profiles.",
+    description: "Access layout drawings for Column and Boom systems alongside the dedicated tank polishing machine catalogue. This section includes the detailed TPM4500-SDX polishing machine catalogue for heavy industrial vessels and internal duct operations.",
     specs: [
       "Diameter Capacity: Up to Ø 4,500 mm",
       "Shell Length: Up to 10,000 mm",
@@ -29,9 +29,20 @@ const CATALOGUE_MACHINERY = [
     ]
   },
   {
-    category: "Centerless Round Pipe & Bar Polishers",
+    category: "Sheet & Plate Buffing Systems PDF",
+    models: "SP1200-3H (3 Heads), SP1500B, SP600B, VB150 Vacuum Bed",
+    description: "Review dimensional standards and feed speeds for conveyor-fed wet and dry setups. Grab the complete sheet polishing machine catalogue and our broad automatic buffing systems technical catalogue for flat surface processing.",
+    specs: [
+      "Sheet Width: Up to 1,200 mm / 1,500 mm",
+      "Plate Thickness: 1 mm – 100 mm",
+      "Feed Speed: 0.5 – 6.0 m/min",
+      "Textures: No.3, No.4 Hairline, Satin, No.8 Mirror"
+    ]
+  },
+  {
+    category: "Pipe Polishing Machine Catalogue",
     models: "CG-150B-L1 (Single Head), CG-150W-2H (Double Head)",
-    description: "Continuous through-feed centerless polishers for round tubes, bright bars, piston rods, and shafts without center holes or mandrels.",
+    description: "Analyze through-feed centerless round grinders and multi-head configurations. Use this automatic tube polishing machine brochure to verify metrics before confirming your overall industrial polishing machine catalogue requirements.",
     specs: [
       "Working Capacity: Ø 10 mm – Ø 150 mm OD",
       "Through-feed Speed: 0.5 – 6.0 m/min (VFD controlled)",
@@ -40,14 +51,14 @@ const CATALOGUE_MACHINERY = [
     ]
   },
   {
-    category: "Conveyorized Sheet & Plate Polishers",
-    models: "SP1200-3H (3 Heads), SP1500B, SP600B, VB150 Vacuum Bed",
-    description: "Heavy-duty wide-belt sheet polishers with variable conveyor feed. Features micrometer head height calibration and wet/dry dust suppression.",
+    category: "Utensil Polishing Machine Catalogue",
+    models: "RTP-7S-6H (7-Station 6-Head), CUP-150DH, TUP-1H",
+    description: "Check semi-automatic and fully automatic hollowware lines for rapid mirror finishing. This standard buffing machine catalogue covers regular cookware, or you can request a custom SPM machine catalogue download for highly specialized production lines.",
     specs: [
-      "Sheet Width: Up to 1,200 mm / 1,500 mm",
-      "Plate Thickness: 1 mm – 100 mm",
-      "Feed Speed: 0.5 – 6.0 m/min",
-      "Textures: No.3, No.4 Hairline, Satin, No.8 Mirror"
+      "Component Diameter: Ø 60 mm – Ø 300 mm OD",
+      "Cycle Time: Rapid 25 to 80 seconds per piece",
+      "Configuration: Multi-head automated indexing",
+      "Turnkey: Mirror and satin buffing integration"
     ]
   },
   {
@@ -71,17 +82,29 @@ const CATALOGUE_MACHINERY = [
       "Surface Ra: Ultra-precise Ra ≤ 0.100 µm",
       "Application: Automotive, hydraulics & defense"
     ]
+  }
+];
+
+const CATALOGUE_FAQS = [
+  {
+    question: "Do these brochures contain data for customized machinery?",
+    answer: "Yes, you can initiate a custom SPM machine catalogue download to check our specialized automation capabilities and custom engineering metrics tailored for manufacturing facilities across India."
   },
   {
-    category: "Automated Cookware & Utensil Lines",
-    models: "RTP-7S-6H (7-Station 6-Head), CUP-150DH, TUP-1H",
-    description: "High-throughput rotary and multi-head buffing lines for pots, bowls, basins, tiffins, kadhai, and cookware lids.",
-    specs: [
-      "Component Diameter: Ø 60 mm – Ø 300 mm OD",
-      "Cycle Time: Rapid 25 to 80 seconds per piece",
-      "Configuration: Multi-head automated indexing",
-      "Turnkey: Mirror and satin buffing integration"
-    ]
+    question: "Are the specifications suitable for Indian manufacturing standards?",
+    answer: "Absolutely. Every industrial surface finishing catalogue PDF we provide aligns with strict quality control and safety protocols, as detailed in our ISO 9001:2015 certified solutions brochure."
+  },
+  {
+    question: "What details are included in the metal polishing machine specifications pdf?",
+    answer: "This document covers precise technical data, machine dimensions, power requirements, and performance outputs. It acts as a complete polishing machine manufacturer catalogue to help plant engineers make informed procurement decisions."
+  },
+  {
+    question: "Can I get technical charts for heavy vessel and flat surface equipment?",
+    answer: "Yes, we provide a dedicated tank polishing machine catalogue along with tank & dishend polishing machinery specs. For flat surface processing, you can access the sheet & plate buffing systems pdf directly from this page."
+  },
+  {
+    question: "Do you offer documents specifically for round pipe grinders?",
+    answer: "We certainly do. You can get the automatic tube polishing machine brochure or the broader pipe polishing machine catalogue to review feed speeds and multi-head configurations for continuous production lines."
   }
 ];
 
@@ -95,6 +118,19 @@ const SPEC_HIGHLIGHTS = [
 ];
 
 const CataloguePage = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": CATALOGUE_FAQS.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   const catalogueSchema = {
     "@context": "https://schema.org",
     "@type": "DigitalDocument",
@@ -145,12 +181,16 @@ const CataloguePage = () => {
         <script type="application/ld+json">
           {JSON.stringify(catalogueSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
 
       <SiteLayout>
         <PageBanner
-          title="Product Catalogue"
-          subtitle="Download complete technical specifications and drawings of our machinery lines"
+          eyebrow="BROCHURE DOWNLOAD"
+          title="Complete Polishing Machine Catalogue & Technical Specifications"
+          description="Access our comprehensive industrial surface finishing catalogue PDF to review detailed machinery specifications. As a leading equipment builder in India, we provide reliable technical documents to help you select the exact machinery for your manufacturing facility. Secure your direct polishing machine brochure download below to analyze machine capabilities, dimensions, and output metrics."
         />
 
         {/* Hero Brochure Download Section */}
@@ -200,10 +240,10 @@ const CataloguePage = () => {
               <div className="lg:col-span-7">
                 <div className="industrial-badge mb-4">Official Publication</div>
                 <h2 className="font-display text-3xl sm:text-4xl text-stone-950 uppercase font-black mb-6 tracking-tight">
-                  Consolidated Technical Catalogue
+                  Complete Polishing Machine Catalogue
                 </h2>
                 <p className="text-stone-600 text-sm md:text-base leading-relaxed mb-6 font-medium">
-                  Download our comprehensive 18-page engineering brochure containing detailed CAD dimensional layouts, spindle motor power ratings, linear through-feed speeds, and achievable surface roughness (Ra) standards across our full machinery portfolio.
+                  Our official industrial surface finishing catalogue PDF consolidates design blueprints and configuration charts for all standard and customizable setups. Designed for technical buyers across India, this ISO 9001:2015 certified solutions brochure serves as a trusted polishing machine manufacturer catalogue to review metal polishing machine specifications pdf data instantly.
                 </p>
 
                 {/* Key Highlights Quick Grid */}
@@ -227,7 +267,7 @@ const CataloguePage = () => {
                     className="inline-flex items-center justify-center gap-2.5 rounded-full bg-primary hover:bg-stone-950 hover:text-white text-stone-950 px-8 py-4 font-heading text-xs font-bold uppercase tracking-widest transition-all shadow-md group"
                   >
                     <Download className="size-4 shrink-0 group-hover:-translate-y-0.5 transition-transform" /> 
-                    Download Catalogue PDF
+                    Polishing Machine Brochure Download
                   </a>
                   <a
                     href="/mb-catalogue.pdf"
@@ -236,7 +276,7 @@ const CataloguePage = () => {
                     className="inline-flex items-center justify-center gap-2.5 rounded-full border border-black/10 bg-white hover:bg-stone-50 text-stone-900 px-8 py-4 font-heading text-xs font-bold uppercase tracking-widest transition-all shadow-sm"
                   >
                     <FileText className="size-4 shrink-0" /> 
-                    View in Browser
+                    View Polishing Machine Brochure In Browser
                   </a>
                 </div>
               </div>
@@ -324,6 +364,34 @@ const CataloguePage = () => {
                   <span className="block text-[11px] text-stone-500 font-medium mt-1">
                     {finish.desc}
                   </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Frequently Asked Questions */}
+        <section className="section-shell bg-white py-20 border-t border-black/5">
+          <div className="container max-w-4xl">
+            <div className="text-center mb-12">
+              <div className="industrial-badge mx-auto mb-3">Catalogue FAQs</div>
+              <h2 className="font-display text-3xl md:text-4xl text-stone-950 uppercase font-black tracking-tight">
+                Frequently Asked Questions
+              </h2>
+              <p className="mt-3 text-sm text-stone-600">
+                Key questions about technical specifications, machine layouts, and downloading customized SPM catalogues.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {CATALOGUE_FAQS.map((faq, index) => (
+                <div key={index} className="bg-[#fbf7ef]/60 rounded-2xl p-6 border border-black/5 shadow-sm">
+                  <h3 className="font-display text-base md:text-lg font-bold text-stone-950 mb-2">
+                    {faq.question}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-medium">
+                    {faq.answer}
+                  </p>
                 </div>
               ))}
             </div>

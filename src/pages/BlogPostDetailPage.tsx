@@ -9,7 +9,7 @@ import { blogPosts } from "@/data/blogContent";
 const formatInlineMarkdown = (text: string) => {
   let html = text;
   // Ensure space before markdown link if preceded by a word or punctuation without space
-  html = html.replace(/([a-zA-Z0-9,\.?])\[([^\]]+)\]\(([^)]+)\)/g, '$1 <a href="$3" class="text-primary hover:underline font-semibold">$2</a>');
+  html = html.replace(/([a-zA-Z0-9,.?])\[([^\]]+)\]\(([^)]+)\)/g, '$1 <a href="$3" class="text-primary hover:underline font-semibold">$2</a>');
   // Bold **text**
   html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   // Markdown links [text](url)
@@ -113,7 +113,7 @@ const renderMarkdownContent = (content: string) => {
 
     // Unordered List Items
     if (trimmed.startsWith("*") || trimmed.startsWith("-")) {
-      const items = trimmed.split("\n").map(l => l.replace(/^[\*\-]\s+/, "").trim());
+      const items = trimmed.split("\n").map(l => l.replace(/^[*-]\s+/, "").trim());
       return (
         <ul key={idx} className="space-y-3.5 my-6 pl-6 list-disc text-stone-700 text-sm md:text-base font-medium">
           {items.map((item, i) => (
