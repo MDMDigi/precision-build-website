@@ -830,11 +830,11 @@ By replacing manual labor hours with a single machine operator, most medium-to-l
 Automating your sheet finishing lines is a strategic upgrade that expands production capacity and helps secure high-volume contract manufacturing opportunities.
     `
   },
-      {
+        {
     id: "torispherical-vs-elliptical-dish-end-polishing",
     title: "Torispherical vs Elliptical Dish End Polishing: A Complete Comparison Guide",
-    metaTitle: "Torispherical vs Elliptical Dish End Polishing Guide | MB",
-    metaDescription: "Compare geometry, knuckle radius challenges, and automated polishing workflows between torispherical and elliptical dish ends for sanitary pressure vessels.",
+    metaTitle: "Torispherical vs Elliptical Dish End Polishing Guide",
+    metaDescription: "Compare torispherical and elliptical dish end polishing methods, surface finishes, machine setup, and industry applications for pressure vessels.",
     excerpt: "Compare torispherical and elliptical dish end polishing methods, surface finishes, machine setup, and industry applications for pressure vessels.",
     date: "November 17, 2026",
     readTime: "7 min read",
@@ -899,36 +899,6 @@ Here is what you can realistically target with each head type when the correct a
 | --- | --- | --- | --- | --- |
 | Torispherical | 3.2 to 6.3 | 1.2 to 1.6 | 0.4 to 0.8 | 0.05 to 0.2 |
 | Elliptical (2:1) | 3.2 to 6.3 | 0.8 to 1.2 | 0.3 to 0.6 | 0.03 to 0.15 |
-
-Geometry
-
-Starting Ra (µm)
-
-After Grinding (Ra µm)
-
-After Satin Finish (Ra µm)
-
-After Mirror Buffing (Ra µm)
-
-Torispherical
-
-3.2 to 6.3
-
-1.2 to 1.6
-
-0.4 to 0.8
-
-0.05 to 0.2
-
-Elliptical (2:1)
-
-3.2 to 6.3
-
-0.8 to 1.2
-
-0.3 to 0.6
-
-0.03 to 0.15
 
 Elliptical heads generally finish to a lower Ra because the uniform curvature allows the abrasive to maintain consistent cutting action. Torispherical heads can reach the same Ra values, but they require more careful blending at the knuckle to avoid visible transition lines.
 
@@ -1034,8 +1004,8 @@ Choosing between torispherical and elliptical geometry is only half the decision
   {
     id: "how-to-achieve-mirror-finish-on-stainless-steel-tanks",
     title: "How to Achieve Mirror Finish on Stainless Steel Tanks: A Practical Workflow",
-    metaTitle: "How to Achieve Mirror Finish on Stainless Steel Tanks | MB",
-    metaDescription: "A practical step-by-step workflow to achieve sanitary Ra ≤ 0.2 µm mirror finish on stainless steel tanks using automated abrasive and buffing sequences.",
+    metaTitle: "How to Achieve Mirror Finish on Stainless Steel Tanks",
+    metaDescription: "Step-by-step guide to achieving a mirror finish on stainless steel tanks, including abrasive stages, equipment choice, and quality checks.",
     excerpt: "Step-by-step guide to achieving a mirror finish on stainless steel tanks, including abrasive stages, equipment choice, and quality checks.",
     date: "November 17, 2026",
     readTime: "8 min read",
@@ -1198,9 +1168,9 @@ A repeatable mirror finish depends on matching the right equipment to your produ
   {
     id: "what-is-a-centerless-pipe-polishing-machine",
     title: "What Is a Centerless Pipe Polishing Machine? A Complete Technical Overview",
-    metaTitle: "What Is a Centerless Pipe Polishing Machine? Technical Overview",
-    metaDescription: "Learn what a centerless pipe polishing machine is, how the regulating wheel and work-rest blade operate, and how to achieve consistent sub-micron tube finishes.",
-    excerpt: "Comprehensive technical guide to centerless pipe polishing machines: working principle, components, throughput, and comparison with manual polishing.",
+    metaTitle: "What Is a Centerless Pipe Polishing Machine? Full Guide",
+    metaDescription: "Understand centerless pipe polishing machines, their working principle, advantages, applications, and how they achieve consistent surface finishes.",
+    excerpt: "Understand centerless pipe polishing machines, their working principle, advantages, applications, and how they achieve consistent surface finishes.",
     date: "November 17, 2026",
     readTime: "8 min read",
     author: "M.B. Technical Editorial Team",
@@ -1297,42 +1267,6 @@ A centerless pipe polishing machine can produce finishes ranging from a basic de
 | Pre-mirror | 0.15 to 0.25 | 4 (320, 400 grit plus sisal buff) |
 | Mirror finish | Below 0.1 | 5 (adds cotton buff with rouge) |
 
-Finish Type
-
-Ra Range (µm)
-
-Abrasive Stages Required
-
-Deburred
-
-1.5 to 3.0
-
-1 (80 grit)
-
-Satin brushed
-
-0.6 to 1.0
-
-2 (120 and 180 grit)
-
-Fine satin
-
-0.3 to 0.5
-
-3 (180, 240, 320 grit)
-
-Pre-mirror
-
-0.15 to 0.25
-
-4 (320, 400 grit plus sisal buff)
-
-Mirror finish
-
-Below 0.1
-
-5 (adds cotton buff with rouge)
-
 Each additional stage adds roughly 20 to 30 percent to the cycle cost but delivers a measurably better surface. The specification for the end application should drive this decision rather than defaulting to the finest finish available.
 
 ### Where Centerless Pipe Polishing Fits in Industry
@@ -1417,9 +1351,9 @@ Choosing between single-head and multi-head configurations, selecting the right 
   {
     id: "centerless-vs-conventional-pipe-polishing-machines",
     title: "Centerless vs. Conventional Pipe Polishing Machines: Which One Fits Your Shop?",
-    metaTitle: "Centerless vs Conventional Pipe Polishing Machines Guide | MB",
-    metaDescription: "Compare centerless through-feed vs conventional between-centers pipe polishers on throughput, dimensional control, setup speed, and shop floor ROI.",
-    excerpt: "Compare centerless and conventional pipe polishing machines on throughput, setup time, labor requirements, capital cost, and production economics.",
+    metaTitle: "Centerless vs Conventional Pipe Polishing Machines",
+    metaDescription: "Compare centerless and conventional pipe polishing machines on throughput, cost, finish quality, and application fit to choose the right system.",
+    excerpt: "Compare centerless and conventional pipe polishing machines on throughput, cost, finish quality, and application fit to choose the right system.",
     date: "November 17, 2026",
     readTime: "8 min read",
     author: "M.B. Technical Editorial Team",

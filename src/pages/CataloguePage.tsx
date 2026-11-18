@@ -238,7 +238,7 @@ const CataloguePage = () => {
 
               {/* Right Side: What's inside & Download button */}
               <div className="lg:col-span-7">
-                <div className="industrial-badge mb-4">Official Publication</div>
+                <div className="industrial-badge mb-4">BROCHURE DOWNLOAD</div>
                 <h2 className="font-display text-3xl sm:text-4xl text-stone-950 uppercase font-black mb-6 tracking-tight">
                   Complete Polishing Machine Catalogue
                 </h2>

@@ -196,23 +196,23 @@ export const SEO_EXPECTATIONS = [
   },
   {
     "url": "https://www.mbfinishtech.com/blog/torispherical-vs-elliptical-dish-end-polishing",
-    "title": "Torispherical vs Elliptical Dish End Polishing Guide | MB",
-    "description": "Compare geometry, knuckle radius challenges, and automated polishing workflows between torispherical and elliptical dish ends for sanitary pressure vessels."
+    "title": "Torispherical vs Elliptical Dish End Polishing Guide",
+    "description": "Compare torispherical and elliptical dish end polishing methods, surface finishes, machine setup, and industry applications for pressure vessels."
   },
   {
     "url": "https://www.mbfinishtech.com/blog/how-to-achieve-mirror-finish-on-stainless-steel-tanks",
-    "title": "How to Achieve Mirror Finish on Stainless Steel Tanks | MB",
-    "description": "A practical step-by-step workflow to achieve sanitary Ra ≤ 0.2 µm mirror finish on stainless steel tanks using automated abrasive and buffing sequences."
+    "title": "How to Achieve Mirror Finish on Stainless Steel Tanks",
+    "description": "Step-by-step guide to achieving a mirror finish on stainless steel tanks, including abrasive stages, equipment choice, and quality checks."
   },
   {
     "url": "https://www.mbfinishtech.com/blog/what-is-a-centerless-pipe-polishing-machine",
-    "title": "What Is a Centerless Pipe Polishing Machine? Technical Overview",
-    "description": "Learn what a centerless pipe polishing machine is, how the regulating wheel and work-rest blade operate, and how to achieve consistent sub-micron tube finishes."
+    "title": "What Is a Centerless Pipe Polishing Machine? Full Guide",
+    "description": "Understand centerless pipe polishing machines, their working principle, advantages, applications, and how they achieve consistent surface finishes."
   },
   {
     "url": "https://www.mbfinishtech.com/blog/centerless-vs-conventional-pipe-polishing-machines",
-    "title": "Centerless vs Conventional Pipe Polishing Machines Guide | MB",
-    "description": "Compare centerless through-feed vs conventional between-centers pipe polishers on throughput, dimensional control, setup speed, and shop floor ROI."
+    "title": "Centerless vs Conventional Pipe Polishing Machines",
+    "description": "Compare centerless and conventional pipe polishing machines on throughput, cost, finish quality, and application fit to choose the right system."
   }
 ];
 
