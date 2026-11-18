@@ -148,7 +148,7 @@ const renderMarkdownContent = (content: string) => {
 
 const BlogPostDetailPage = () => {
   const { blogId } = useParams();
-  const post = blogPosts.find((p) => p.id === blogId);
+  const post = blogPosts.find((p) => p.id === blogId || p.aliases?.includes(blogId || ""));
 
   if (!post) {
     return <Navigate to="/404" replace />;
