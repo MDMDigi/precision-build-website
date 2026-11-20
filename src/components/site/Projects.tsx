@@ -11,7 +11,7 @@ export const Projects = () => {
         <div className="mb-16 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
             <div className="industrial-badge mb-6">Gallery</div>
-            <h2 className="font-display text-5xl leading-[0.92] tracking-tight text-stone-950 md:text-6xl">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] sm:leading-[0.92] tracking-tight text-stone-950 break-words">
               Product and application imagery with a stronger luxury-editorial
               feel.
             </h2>

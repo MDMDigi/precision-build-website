@@ -49,7 +49,7 @@ export const IndustriesServed = () => {
       <div className="container">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <div className="industrial-badge mx-auto mb-6">Industries We Supply</div>
-          <h2 className="font-display text-5xl leading-[0.92] tracking-tight text-stone-950 md:text-6xl">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] sm:leading-[0.92] tracking-tight text-stone-950 break-words">
             Precision engineering solutions across critical sectors.
           </h2>
           <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">

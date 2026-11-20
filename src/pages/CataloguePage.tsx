@@ -200,7 +200,7 @@ const CataloguePage = () => {
               
               {/* Left Side: Mock brochure cover */}
               <div className="lg:col-span-5 flex justify-center">
-                <div className="relative group max-w-sm w-full bg-white rounded-[2.5rem] border border-black/10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.15)] p-8 transition-transform duration-300 hover:scale-[1.02]">
+                <div className="relative group max-w-sm w-full bg-white rounded-2xl sm:rounded-[2.5rem] border border-black/10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.15)] p-5 sm:p-8 transition-transform duration-300 hover:scale-[1.02]">
                   <div className="aspect-[3/4] rounded-2xl bg-stone-950 p-6 flex flex-col justify-between text-white relative overflow-hidden border border-white/10 shadow-inner">
                     <div className="absolute top-0 right-0 w-40 h-40 bg-primary/20 rounded-full blur-3xl pointer-events-none" />
                     
@@ -239,7 +239,7 @@ const CataloguePage = () => {
               {/* Right Side: What's inside & Download button */}
               <div className="lg:col-span-7">
                 <div className="industrial-badge mb-4">BROCHURE DOWNLOAD</div>
-                <h2 className="font-display text-3xl sm:text-4xl text-stone-950 uppercase font-black mb-6 tracking-tight">
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-stone-950 uppercase font-black mb-6 tracking-tight break-words">
                   Complete Polishing Machine Catalogue
                 </h2>
                 <p className="text-stone-600 text-sm md:text-base leading-relaxed mb-6 font-medium">

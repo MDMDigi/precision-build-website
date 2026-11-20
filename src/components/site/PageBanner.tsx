@@ -26,14 +26,14 @@ export const PageBanner = ({
         }}
       />
       <div className="container relative">
-        <div className="premium-panel max-w-5xl p-8 md:p-12">
+        <div className="premium-panel max-w-5xl p-5 sm:p-8 md:p-12">
           {hasContent ? (
             <>
               {eyebrow ? (
                 <div className="industrial-badge mb-6">{eyebrow}</div>
               ) : null}
               {title ? (
-                <h1 className="font-display text-5xl leading-[0.9] tracking-tight text-stone-950 md:text-7xl">
+                <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.08] sm:leading-[0.95] tracking-tight text-stone-950 break-words">
                   {title}
                 </h1>
               ) : null}

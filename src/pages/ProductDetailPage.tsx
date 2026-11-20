@@ -250,7 +250,7 @@ const ProductDetailPage = () => {
                   <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em] block">
                     {product.usp}
                   </span>
-                  <h1 className="font-display text-3xl md:text-4xl text-stone-900 uppercase font-black mt-2 leading-[1.1]">
+                  <h1 className="font-display text-2xl sm:text-3xl md:text-4xl text-stone-900 uppercase font-black mt-2 leading-[1.1] break-words">
                     {product.name}
                   </h1>
                   <p className="text-xs sm:text-sm text-stone-500 mt-4 leading-relaxed font-medium">
@@ -263,19 +263,19 @@ const ProductDetailPage = () => {
                   <h4 className="font-heading text-xs tracking-widest uppercase font-bold text-stone-900 mb-4 flex items-center gap-2">
                     <Settings className="size-4 text-primary animate-spin-slow" /> Technical Specifications:
                   </h4>
-                  <div className="border border-black/5 rounded-2xl overflow-hidden shadow-soft">
-                    <table className="w-full text-left border-collapse text-xs">
+                  <div className="border border-black/5 rounded-2xl overflow-x-auto shadow-soft">
+                    <table className="w-full min-w-[480px] text-left border-collapse text-xs">
                       <thead>
                         <tr className="bg-stone-50 border-b border-black/5 font-bold text-stone-800 uppercase tracking-wider text-[9px]">
-                          <th className="p-4">Parameter Name</th>
-                          <th className="p-4">Specification Target</th>
+                          <th className="p-3.5 sm:p-4 whitespace-nowrap">Parameter Name</th>
+                          <th className="p-3.5 sm:p-4 whitespace-nowrap">Specification Target</th>
                         </tr>
                       </thead>
                       <tbody>
                         {Object.entries(product.specs).map(([key, value]) => (
                           <tr key={key} className="border-b border-black/5 last:border-b-0 hover:bg-[#faf6ed]/40 transition-colors">
-                            <td className="p-4 font-semibold text-stone-900">{key}</td>
-                            <td className="p-4 text-stone-600 font-medium">{value}</td>
+                            <td className="p-3.5 sm:p-4 font-semibold text-stone-900 whitespace-nowrap">{key}</td>
+                            <td className="p-3.5 sm:p-4 text-stone-600 font-medium">{value}</td>
                           </tr>
                         ))}
                       </tbody>

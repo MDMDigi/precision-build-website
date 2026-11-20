@@ -21,10 +21,10 @@ export const WhatsAppFab = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div ref={containerRef} className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end">
       {/* Animated Popover menu */}
       {isOpen && (
-        <div className="mb-4 w-72 rounded-2xl border border-black/5 bg-white p-4 shadow-2xl backdrop-blur-xl animate-scale-in text-stone-900">
+        <div className="mb-3 w-[calc(100vw-2rem)] max-w-72 rounded-2xl border border-black/5 bg-white p-4 shadow-2xl backdrop-blur-xl animate-scale-in text-stone-900">
           <div className="flex justify-between items-center pb-2 border-b border-black/5 mb-3">
             <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
               Contact WhatsApp

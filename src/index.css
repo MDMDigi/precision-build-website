@@ -73,10 +73,14 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    overflow-x: hidden;
+    max-width: 100vw;
     font-family: "Calibri", "Segoe UI", Arial, sans-serif;
     font-feature-settings: normal;
     font-variant-numeric: lining-nums proportional-nums;
@@ -112,7 +116,7 @@
   }
 
   .section-shell {
-    @apply relative overflow-hidden py-24 md:py-32;
+    @apply relative overflow-hidden py-16 md:py-24 lg:py-32;
   }
 
   .section-shell::before {

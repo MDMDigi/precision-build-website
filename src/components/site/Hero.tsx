@@ -90,7 +90,7 @@ export const Hero = () => {
             </div>
 
             <div className="mb-6 max-w-5xl">
-              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl leading-[1.12] tracking-tight text-stone-950 uppercase font-bold">
+              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl leading-[1.12] tracking-tight text-stone-950 uppercase font-bold break-words">
                 High-Performance Metal Polishing Machines & Automatic Buffing Systems
               </h1>
             </div>

@@ -42,7 +42,7 @@ const renderMarkdownContent = (content: string) => {
     // Headings #### H4 or (H4)
     if (trimmed.startsWith("####") || /^\(H4\)\s*/i.test(trimmed)) {
       return (
-        <h4 key={idx} className="font-display text-lg md:text-xl font-bold text-stone-900 mt-6 mb-3 tracking-tight">
+        <h4 key={idx} className="font-display text-lg md:text-xl font-bold text-stone-900 mt-6 mb-3 tracking-tight break-words">
           {trimmed.replace(/^####\s+/, "").replace(/^\(H4\)\s*/i, "")}
         </h4>
       );
@@ -51,7 +51,7 @@ const renderMarkdownContent = (content: string) => {
     // Headings ### H3 or (H3)
     if (trimmed.startsWith("###") || /^\(H3\)\s*/i.test(trimmed)) {
       return (
-        <h3 key={idx} className="font-display text-xl md:text-2xl font-bold text-stone-900 mt-8 mb-4 tracking-tight border-b border-black/5 pb-2">
+        <h3 key={idx} className="font-display text-xl md:text-2xl font-bold text-stone-900 mt-8 mb-4 tracking-tight border-b border-black/5 pb-2 break-words">
           {trimmed.replace(/^###\s+/, "").replace(/^\(H3\)\s*/i, "")}
         </h3>
       );
@@ -60,7 +60,7 @@ const renderMarkdownContent = (content: string) => {
     // Headings ## H2 or (H2)
     if (trimmed.startsWith("##") || /^\(H2\)\s*/i.test(trimmed)) {
       return (
-        <h2 key={idx} className="font-display text-2xl md:text-3xl font-black text-stone-950 mt-10 mb-4 tracking-tight border-b border-black/10 pb-2">
+        <h2 key={idx} className="font-display text-2xl md:text-3xl font-black text-stone-950 mt-10 mb-4 tracking-tight border-b border-black/10 pb-2 break-words">
           {trimmed.replace(/^##\s+/, "").replace(/^\(H2\)\s*/i, "")}
         </h2>
       );
@@ -84,12 +84,12 @@ const renderMarkdownContent = (content: string) => {
       const bodyRows = rows.slice(2);
 
       return (
-        <div key={idx} className="my-8 border border-black/5 rounded-2xl overflow-hidden shadow-soft text-xs">
-          <table className="w-full text-left border-collapse">
+        <div key={idx} className="my-8 border border-black/5 rounded-2xl overflow-x-auto shadow-soft text-xs">
+          <table className="w-full min-w-[560px] text-left border-collapse">
             <thead>
               <tr className="bg-stone-50 border-b border-black/5 font-bold text-stone-800 uppercase tracking-wider text-[9px]">
                 {headers.map((h, i) => (
-                  <th key={i} className="p-4">{h}</th>
+                  <th key={i} className="p-3.5 sm:p-4 whitespace-nowrap sm:whitespace-normal">{h}</th>
                 ))}
               </tr>
             </thead>
@@ -99,7 +99,7 @@ const renderMarkdownContent = (content: string) => {
                   {r.map((c, ci) => (
                     <td 
                       key={ci} 
-                      className="p-4 font-semibold text-stone-700" 
+                      className="p-3.5 sm:p-4 font-semibold text-stone-700 whitespace-nowrap sm:whitespace-normal" 
                       dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(c) }}
                     />
                   ))}
@@ -264,7 +264,7 @@ const BlogPostDetailPage = () => {
               </div>
 
               {/* White reading paper wrapper */}
-              <article className="bg-white rounded-[2.5rem] border border-black/5 p-6 md:p-12 shadow-soft">
+              <article className="bg-white rounded-2xl sm:rounded-[2.5rem] border border-black/5 p-4 sm:p-8 md:p-12 shadow-soft">
                 {/* Meta details */}
                 <div className="flex flex-wrap items-center gap-5 text-[10px] font-bold uppercase tracking-wider text-stone-400 border-b border-black/5 pb-6 mb-6">
                   <span className="flex items-center gap-1.5">
@@ -279,7 +279,7 @@ const BlogPostDetailPage = () => {
                 </div>
 
                 {/* H1 Main Heading */}
-                <h1 className="font-display text-2xl sm:text-3xl md:text-4xl text-stone-950 font-black uppercase tracking-tight leading-[1.1] mb-6">
+                <h1 className="font-display text-2xl sm:text-3xl md:text-4xl text-stone-950 font-black uppercase tracking-tight leading-[1.1] mb-6 break-words">
                   {post.title}
                 </h1>
 
@@ -347,7 +347,7 @@ const BlogPostDetailPage = () => {
         <div className="bg-white border-t border-black/5">
           <div className="container pt-16 -mb-12 text-center">
             <div className="industrial-badge mx-auto mb-4">Request Quotation</div>
-            <h2 className="font-display text-4xl leading-none tracking-tight text-stone-950 uppercase font-black">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl leading-tight sm:leading-none tracking-tight text-stone-950 uppercase font-black break-words">
               Interested in our Polishing Automation?
             </h2>
             <p className="mt-4 text-sm text-stone-500 max-w-xl mx-auto font-medium">

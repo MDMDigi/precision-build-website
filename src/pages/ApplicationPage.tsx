@@ -190,7 +190,7 @@ const ApplicationPage = () => {
           <div className="container">
             <div className="text-center mb-12">
               <div className="industrial-badge mx-auto mb-4">Select Industry</div>
-              <h1 className="font-display text-4xl tracking-tight text-stone-950 md:text-5xl font-black uppercase">
+              <h1 className="font-display text-2xl sm:text-3xl md:text-5xl tracking-tight text-stone-950 font-black uppercase break-words">
                 Tailored solutions for sector-specific standards
               </h1>
             </div>
@@ -230,13 +230,13 @@ const ApplicationPage = () => {
             </div>
 
             {/* Industry Specific Content Box */}
-            <div className="premium-panel bg-white p-8 md:p-12 shadow-[0_24px_80px_-46px_rgba(20,20,20,0.4)] border-black/5">
+            <div className="premium-panel bg-white p-5 sm:p-8 md:p-12 shadow-[0_24px_80px_-46px_rgba(20,20,20,0.4)] border-black/5">
               <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-start">
                 <div>
                   <span className="text-[10px] uppercase font-bold text-primary tracking-[0.24em]">
                     Industry Sector Focus
                   </span>
-                  <h3 className="font-display text-4xl md:text-5xl text-stone-950 mt-2 leading-tight">
+                  <h3 className="font-display text-2xl sm:text-4xl md:text-5xl text-stone-950 mt-2 leading-tight break-words">
                     {currentIndustry.name}
                   </h3>
                   <p className="font-heading text-lg text-primary font-medium mt-2">
@@ -274,7 +274,7 @@ const ApplicationPage = () => {
                       <Activity className="size-4 text-primary" /> Application Use Cases:
                     </h4>
                     <div className="overflow-x-auto border border-black/5 rounded-xl">
-                      <table className="w-full text-left border-collapse text-xs">
+                      <table className="w-full min-w-[480px] text-left border-collapse text-xs">
                         <thead>
                           <tr className="bg-stone-50 border-b border-black/5 font-semibold text-stone-700">
                             <th className="p-3">Target Component</th>

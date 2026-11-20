@@ -30,7 +30,7 @@ export const WhyChoose = () => {
       <div className="container">
         <div className="mx-auto mb-14 max-w-3xl text-center">
           <div className="industrial-badge mx-auto mb-6">Why Choose Us</div>
-          <h2 className="font-display text-5xl leading-[0.92] tracking-tight text-stone-950 md:text-6xl">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] sm:leading-[0.92] tracking-tight text-stone-950 break-words">
             Built for performance, trusted for more exacting finishing results.
           </h2>
         </div>

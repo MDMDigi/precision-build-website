@@ -13,7 +13,7 @@ export const VideoSection = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
           <div>
             <div className="industrial-badge mb-6">Our Videos</div>
-            <h2 className="font-heading text-4xl md:text-6xl uppercase tracking-tight leading-[0.95] text-balance text-stone-950">
+            <h2 className="font-heading text-2xl sm:text-4xl md:text-6xl uppercase tracking-tight leading-[1.05] sm:leading-[0.95] text-balance text-stone-950 break-words">
               Watch our machines in <span className="text-primary">action</span>
             </h2>
           </div>
