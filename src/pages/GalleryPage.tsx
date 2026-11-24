@@ -14,9 +14,7 @@ const GalleryPage = () => {
           content="Watch automatic tank, sheet, and centerless pipe buffing machines operate on factory floors. See actual surface finishing results on industrial metal parts."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/gallery" />
-        <meta name="keywords" content="polishing gallery, machine videos, buffing photos, industrial machinery gallery" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Industrial Polishing Machine Working Videos | MB Finish" />
         <meta property="og:description" content="Watch automatic tank, sheet, and centerless pipe buffing machines operate on factory floors. See actual surface finishing results on industrial metal parts." />

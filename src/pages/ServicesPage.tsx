@@ -203,9 +203,7 @@ const ServicesPage = () => {
           content="Keep your production running with on-site polishing machine maintenance, precision commissioning, and genuine spare parts across industrial plants in India."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/services" />
-        <meta name="keywords" content="Polishing Machine Service, industrial polishing services, polishing machine installation, polishing machine commissioning, polishing machine maintenance, polishing machine after sales service, polishing machine technical support, polishing machine spare parts" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Industrial Polishing Machine Maintenance and Spare Parts" />
         <meta property="og:description" content="Keep your production running with on-site polishing machine maintenance, precision commissioning, and genuine spare parts across industrial plants in India." />

@@ -13,9 +13,7 @@ const ContactPage = () => {
           content="Connect with an industrial polishing machine manufacturer in Bhosari MIDC, Pune. Talk to our machinery team to discuss custom surface finishing build quotes."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/contact" />
-        <meta name="keywords" content="Polishing Machine Manufacturer Pune, polishing machine manufacturer Pune, polishing machine manufacturer Maharashtra, polishing machine supplier Pune, industrial polishing machine manufacturer Pune, polishing machine company Pune, polishing machine manufacturer India, buffing machine manufacturer Pune" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Polishing Machine Manufacturer Pune | Contact MB Tech India" />
         <meta property="og:description" content="Connect with an industrial polishing machine manufacturer in Bhosari MIDC, Pune. Talk to our machinery team to discuss custom surface finishing build quotes." />

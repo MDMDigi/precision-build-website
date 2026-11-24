@@ -15,9 +15,7 @@ const BlogPage = () => {
           content="Read practical engineering guides on industrial polishing techniques, buffing wheel setups, and surface roughness control for heavy manufacturing production lines."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/blog" />
-        <meta name="keywords" content="metal polishing blog, buffing guides, vessel polishing machine, sheet polisher automation, mirror finish Ra" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Industrial Metal Finishing Blog | MB Finishing Technologies" />
         <meta property="og:description" content="Read practical engineering guides on industrial polishing techniques, buffing wheel setups, and surface roughness control for heavy manufacturing production lines." />

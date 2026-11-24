@@ -213,12 +213,32 @@ export const SEO_EXPECTATIONS = [
     "url": "https://www.mbfinishtech.com/blog/centerless-vs-conventional-pipe-polishing-machines",
     "title": "Centerless vs Conventional Pipe Polishing Machines",
     "description": "Compare centerless and conventional pipe polishing machines on throughput, cost, finish quality, and application fit to choose the right system."
+  },
+  {
+    "url": "https://www.mbfinishtech.com/blog/surface-roughness-ra-grit-stainless-steel-finishes",
+    "title": "Surface Roughness Explained: Ra, Grit & SS Finishes",
+    "description": "Surface roughness explained: what Ra means, how grit numbers map to Ra, and how No.4, hairline & No.8 stainless steel finishes compare. By MB Finish Tech."
+  },
+  {
+    "url": "https://www.mbfinishtech.com/blog/electropolishing-vs-mechanical-polishing",
+    "title": "Electropolishing vs Mechanical Polishing: Which to Use",
+    "description": "Electropolishing vs mechanical polishing for stainless steel: how each works, strengths, and which to choose by application. Guide by MB Finish Tech."
+  },
+  {
+    "url": "https://www.mbfinishtech.com/blog/pharma-dairy-tank-finishing-standards",
+    "title": "Pharma & Dairy Tank Finishing: 3-A & ASME BPE Guide",
+    "description": "How to meet 3-A, ASME BPE and hygienic surface standards on pharma & dairy tanks: Ra requirements, welds, dish ends and verification. By MB Finish Tech."
+  },
+  {
+    "url": "https://www.mbfinishtech.com/blog/polishing-machine-roi-automation-payback",
+    "title": "Polishing Machine ROI: When Does Automation Pay Off?",
+    "description": "When does an automatic polishing machine pay off? A clear ROI framework covering labour, rework, throughput and payback. Guide by MB Finish Tech."
   }
 ];
 
 describe("SEO Expectations Verification", () => {
-  it("should have exactly 42 target URLs", () => {
-    expect(SEO_EXPECTATIONS.length).toBe(42);
+  it("should have exactly 46 target URLs", () => {
+    expect(SEO_EXPECTATIONS.length).toBe(46);
   });
 
   it("should find every expected title and meta description present in codebase files", () => {

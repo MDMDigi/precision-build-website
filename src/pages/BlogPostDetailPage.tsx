@@ -161,6 +161,7 @@ const BlogPostDetailPage = () => {
     "headline": post.metaTitle || post.title,
     "image": post.image?.startsWith("http") ? post.image : `https://www.mbfinishtech.com${post.image || "/favicon.png"}`,
     "datePublished": post.date ? new Date(post.date).toISOString() : "2026-10-05T12:00:00+05:30",
+    "dateModified": post.date ? new Date(post.date).toISOString() : "2026-11-24T12:00:00+05:30",
     "author": {
       "@type": "Organization",
       "name": "M.B. Finishing Technologies",
@@ -203,10 +204,9 @@ const BlogPostDetailPage = () => {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={`https://www.mbfinishtech.com/blog/${post.id}`} />
-        <meta name="keywords" content={`${post.keywords.join(", ")}, automatic buffing, M.B. Finishing`} />
-        
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="M.B. Finishing Technologies" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={`https://www.mbfinishtech.com/blog/${post.id}`} />

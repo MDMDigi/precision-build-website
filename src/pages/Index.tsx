@@ -19,9 +19,7 @@ const Index = () => {
           content="Source heavy-duty metal polishing and buffing machines engineered in India. Automate your plant finishing lines with custom systems from MB Finishing today."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/" />
-        <meta name="keywords" content="Metal Polishing & Buffing Machines India, industrial polishing machine manufacturer, polishing machine manufacturer in India, automatic polishing machines, industrial buffing machines, metal polishing machines, automatic buffing machine, metal finishing machines, surface finishing machines, polishing and buffing machines" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Metal Polishing & Buffing Machines India | MB Finish Tech" />
         <meta property="og:description" content="Source heavy-duty metal polishing and buffing machines engineered in India. Automate your plant finishing lines with custom systems from MB Finishing today." />

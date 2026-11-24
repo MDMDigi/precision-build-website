@@ -163,9 +163,7 @@ const CataloguePage = () => {
           content="Download our technical metal polishing machine catalogue PDF. Review engineering specs for automatic tube, sheet, and dishend buffing systems built in India."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/catalogue" />
-        <meta name="keywords" content="Polishing Machine Catalogue, polishing machine catalogue, polishing machine manufacturer catalogue, industrial polishing machine catalogue, buffing machine catalogue, tank polishing machine catalogue, sheet polishing machine catalogue, pipe polishing machine catalogue, utensil polishing machine catalogue, polishing machine brochure" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Industrial Polishing Machine Catalogue PDF | MB Finish Tech" />
         <meta property="og:description" content="Download our technical metal polishing machine catalogue PDF. Review engineering specs for automatic tube, sheet, and dishend buffing systems built in India." />

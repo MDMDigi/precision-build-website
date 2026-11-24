@@ -13,9 +13,7 @@ const CareerPage = () => {
           content="Grow your engineering career in Bhosari MIDC, Pune. We hire machine design engineers, assembly technicians, and fabrication specialists for industrial SPM lines."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/career" />
-        <meta name="keywords" content="engineering careers, machine builder jobs, Pune manufacturing jobs, M.B. Finishing recruitment" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="SPM Machine Manufacturing Jobs in Pune | MB Finish Tech" />
         <meta property="og:description" content="Grow your engineering career in Bhosari MIDC, Pune. We hire machine design engineers, assembly technicians, and fabrication specialists for industrial SPM lines." />

@@ -72,9 +72,7 @@ const SurfaceFinishesPage = () => {
           content="Achieve precise Ra 0.40 µm pharma sanitary standards, No.4 satin, and No.8 mirror polishes on stainless steel using automated machinery built for your plant."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/finishes" />
-        <meta name="keywords" content="surface finishes, Ra value, mirror finish, satin finish, metal roughness, sanitary polishing standards" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Ra Surface Roughness Values Explained | MB Finishing Tech" />
         <meta property="og:description" content="Achieve precise Ra 0.40 µm pharma sanitary standards, No.4 satin, and No.8 mirror polishes on stainless steel using automated machinery built for your plant." />

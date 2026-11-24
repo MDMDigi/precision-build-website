@@ -132,26 +132,61 @@ const ProductsPage = () => {
   const seo = CATEGORY_SEO[activeCategory] || CATEGORY_SEO.all;
   const currentHeading = CATEGORY_HEADINGS[activeCategory] || CATEGORY_HEADINGS.all;
 
+  const breadcrumbItems = [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mbfinishtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "https://www.mbfinishtech.com/products"
+    }
+  ];
+
+  if (activeCategory !== "all") {
+    breadcrumbItems.push({
+      "@type": "ListItem",
+      "position": 3,
+      "name": currentHeading.h1,
+      "item": seo.canonical
+    });
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems
+  };
+
   return (
     <>
       <Helmet>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <link rel="canonical" href={seo.canonical} />
-        <meta name="keywords" content={seo.keywords} />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="M.B. Finishing Technologies" />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
         <meta property="og:url" content={seo.canonical} />
-        <meta property="og:image" content="https://www.mbfinishtech.com/favicon.png" />
+        <meta property="og:image" content="https://www.mbfinishtech.com/og-image.jpg" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:description" content={seo.description} />
-        <meta name="twitter:image" content="https://www.mbfinishtech.com/favicon.png" />
+        <meta name="twitter:image" content="https://www.mbfinishtech.com/og-image.jpg" />
+
+        {/* JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <SiteLayout>

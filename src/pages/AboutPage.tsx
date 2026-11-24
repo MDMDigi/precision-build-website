@@ -13,9 +13,7 @@ const AboutPage = () => {
           content="Partner with an ISO 9001:2015 certified metal finishing and buffing machine manufacturer in Pune, India, engineering custom surface systems for your shop line."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/about" />
-        <meta name="keywords" content="Industrial Polishing Machine Manufacturer Pune Maharashtra, industrial polishing machine manufacturer, automatic polishing machine manufacturer, buffing machine manufacturer, metal finishing machine manufacturer, polishing machine company India, polishing machine manufacturer Pune, polishing machine manufacturer Maharashtra, Indian polishing machine manufacturer" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Industrial Polishing Machine Manufacturer Pune Maharashtra" />
         <meta property="og:description" content="Partner with an ISO 9001:2015 certified metal finishing and buffing machine manufacturer in Pune, India, engineering custom surface systems for your shop line." />

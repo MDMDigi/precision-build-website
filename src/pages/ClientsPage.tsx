@@ -14,9 +14,7 @@ const ClientsPage = () => {
           content="Deliver Ra 0.2 micron mirror finishes across pharmaceutical tanks, dairy vessels, and automotive parts with automated buffing lines engineered for your plant."
         />
         <link rel="canonical" href="https://www.mbfinishtech.com/clients" />
-        <meta name="keywords" content="polishing clients, pharmaceutical polishing, automotive buffing, client logos, M.B. Finishing customers" />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Industrial Surface Finishing Applications | MB Tech India" />
         <meta property="og:description" content="Deliver Ra 0.2 micron mirror finishes across pharmaceutical tanks, dairy vessels, and automotive parts with automated buffing lines engineered for your plant." />

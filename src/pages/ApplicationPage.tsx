@@ -168,9 +168,7 @@ const ApplicationPage = () => {
         <title>Industrial Surface Finishing Applications | MB Finish Tech</title>
         <meta name="description" content="Deliver precision surface finishes across pharma vessels, dairy tanks, and automotive parts with automated polishing machinery engineered for your plant line." />
         <link rel="canonical" href="https://www.mbfinishtech.com/application" />
-        <meta name="keywords" content={seo.keywords} />
-        
-        {/* Open Graph / Facebook */}
+{/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Industrial Surface Finishing Applications | MB Finish Tech" />
         <meta property="og:description" content="Deliver precision surface finishes across pharma vessels, dairy tanks, and automotive parts with automated polishing machinery engineered for your plant line." />

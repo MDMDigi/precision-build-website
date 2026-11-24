@@ -42,6 +42,7 @@ const ProductDetailPage = () => {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": product.name,
+    "model": product.id.toUpperCase(),
     "image": `https://www.mbfinishtech.com${product.image}`,
     "description": product.description,
     "brand": {
@@ -59,6 +60,37 @@ const ProductDetailPage = () => {
         "name": "M.B. Finishing Technologies"
       }
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.mbfinishtech.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://www.mbfinishtech.com/products"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": categoryLabel,
+        "item": `https://www.mbfinishtech.com/products/category/${product.category}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": product.name,
+        "item": `https://www.mbfinishtech.com/products/${product.id}`
+      }
+    ]
   };
 
   const PRODUCT_SEO: Record<string, { title: string; keywords: string; description: string }> = {
@@ -141,10 +173,9 @@ const ProductDetailPage = () => {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <link rel="canonical" href={`https://www.mbfinishtech.com/products/${product.id}`} />
-        <meta name="keywords" content={seo.keywords} />
-        
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="M.B. Finishing Technologies" />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
         <meta property="og:url" content={`https://www.mbfinishtech.com/products/${product.id}`} />
@@ -159,6 +190,9 @@ const ProductDetailPage = () => {
         {/* JSON-LD Schema */}
         <script type="application/ld+json">
           {JSON.stringify(productSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       </Helmet>
 
