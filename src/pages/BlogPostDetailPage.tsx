@@ -294,8 +294,11 @@ const BlogPostDetailPage = () => {
                     <img 
                       src={post.image} 
                       alt={post.title} 
+                      width={1200}
+                      height={630}
                       className="w-full h-auto max-h-[440px] object-cover object-center"
                       loading="eager"
+                      decoding="async"
                     />
                   </div>
                 )}

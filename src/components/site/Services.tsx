@@ -47,9 +47,12 @@ export const Services = ({ limit, showViewAll = false }: ServicesProps) => {
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={product.image}
-                  alt={product.name}
+                  alt={`${product.name} industrial surface finishing machine`}
+                  width={400}
+                  height={300}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,11,8,0)_20%,rgba(15,11,8,0.22)_100%)]" />
                 <div className="absolute left-5 top-5 rounded-full border border-white/15 bg-stone-950/70 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur">

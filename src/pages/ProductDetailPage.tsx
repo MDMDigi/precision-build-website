@@ -239,8 +239,11 @@ const ProductDetailPage = () => {
                 <div className="rounded-[2rem] overflow-hidden aspect-[4/3] border border-black/5 shadow-soft bg-white p-6 md:p-10 flex items-center justify-center">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={`${product.name} industrial surface polishing machine`}
+                    width={800}
+                    height={600}
                     className="w-full h-full object-contain"
+                    decoding="async"
                   />
                 </div>
 
@@ -345,7 +348,11 @@ const ProductDetailPage = () => {
                         <div className="rounded-2xl overflow-hidden aspect-[4/3] border border-black/5 shadow-soft bg-white p-4 mb-4 flex items-center justify-center">
                           <img
                             src={p.image}
-                            alt={p.name}
+                            alt={`${p.name} industrial polishing machine`}
+                            width={500}
+                            height={375}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-contain"
                           />
                         </div>

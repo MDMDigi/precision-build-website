@@ -283,9 +283,12 @@ const ProductsPage = () => {
                     <div className="relative aspect-[4/3] overflow-hidden bg-white p-4">
                       <img
                         src={product.image}
-                        alt={product.name}
+                        alt={`${product.name} automatic metal polishing machine`}
+                        width={600}
+                        height={450}
                         className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,11,8,0)_30%,rgba(15,11,8,0.03)_100%)] pointer-events-none" />
                       

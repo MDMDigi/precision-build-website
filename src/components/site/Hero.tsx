@@ -161,7 +161,11 @@ export const Hero = () => {
                   >
                     <img
                       src={slide.image}
-                      alt={slide.title}
+                      alt={`${slide.title} automatic finishing machine`}
+                      width={600}
+                      height={450}
+                      loading={idx === 0 ? "eager" : "lazy"}
+                      decoding="async"
                       className="w-full h-full object-contain pb-20 pt-6 px-6 opacity-95 saturate-[1.05]"
                     />
                     

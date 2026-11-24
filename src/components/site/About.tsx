@@ -75,6 +75,8 @@ export const About = () => {
                   <img
                     src={mbLogo}
                     alt="M.B. Finishing Logo"
+                    width={64}
+                    height={64}
                     className="h-16 w-auto object-contain shrink-0"
                   />
                   <div className="flex flex-col text-left">
@@ -94,6 +96,8 @@ export const About = () => {
                 <div className="flex items-center gap-3 bg-stone-100 border border-stone-300/60 rounded-full px-4 py-2.5 self-start sm:self-center shadow-sm">
                   <img
                     src={makeInIndiaImg}
+                    width={80}
+                    height={20}
                     className="h-5 w-auto object-contain shrink-0"
                     alt="Made In India"
                   />
