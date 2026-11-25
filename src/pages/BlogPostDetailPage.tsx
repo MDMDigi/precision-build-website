@@ -312,15 +312,15 @@ const BlogPostDetailPage = () => {
                 {post.faqs && post.faqs.length > 0 && (
                   <div className="mt-16 pt-10 border-t border-black/10">
                     <div className="industrial-badge mb-3">Questions & Answers</div>
-                    <h3 className="font-display text-2xl md:text-3xl font-black uppercase text-stone-950 tracking-tight mb-6">
+                    <h2 className="font-display text-2xl md:text-3xl font-black uppercase text-stone-950 tracking-tight mb-6">
                       Frequently Asked Questions
-                    </h3>
+                    </h2>
                     <div className="space-y-4">
                       {post.faqs.map((faq, i) => (
                         <div key={i} className="border border-black/10 rounded-2xl p-6 bg-[#faf6ed]/40 hover:bg-[#faf6ed]/70 transition-colors">
-                          <h4 className="font-display text-base md:text-lg font-bold text-stone-900 mb-2">
+                          <h3 className="font-display text-base md:text-lg font-bold text-stone-900 mb-2">
                             {faq.question}
-                          </h4>
+                          </h3>
                           <p className="text-sm md:text-base text-stone-700 leading-relaxed font-medium">
                             {faq.answer}
                           </p>

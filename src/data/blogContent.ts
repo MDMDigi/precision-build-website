@@ -1585,9 +1585,7 @@ Equipment selection is easier when you can see both machine types in operation a
         answer: "Both is best, but Ra is the precise part. Specify a target Ra in \u00b5m, add the finish name for clarity, and agree how it will be measured.",
       },
     ],
-    content: `Surface roughness is measured as Ra — the average height of the tiny peaks and valleys on a surface, in micrometres (µm). A lower Ra means a smoother surface. In polishing, the abrasive grit number controls the Ra you achieve: finer grit (a higher number) produces a lower Ra and a smoother finish. This is how grit, Ra, and named stainless steel finishes like No.4 and No.8 all connect. This guide explains each, and how to specify the right finish. At MB Finish Tech, we build industrial polishing machines in India engineered to hit precise Ra targets.
-
-## Key Takeaways
+    content: `## Key Takeaways
 
 - Ra is the average surface roughness in micrometres (µm); lower Ra = smoother.
 - Finer abrasive grit (higher grit number) produces a lower Ra.
@@ -1612,8 +1610,6 @@ Achieving a specific Ra consistently is the whole point of industrial polishing.
 ## What Ra actually measures
 
 Picture a magnified slice through a polished surface. Ra is the average distance of all those peaks and valleys from an imaginary mean line through the middle.
-
-[embed: node/8a18bfbd-b5a7]
 
 A smoother surface has shallower peaks and valleys, so the average distance from the mean line, the Ra, is smaller. That's the whole idea behind the number.
 
@@ -1759,9 +1755,7 @@ MB Finish Tech designs and builds industrial polishing machines in India enginee
         answer: "Mechanical polishing. Large tanks and vessels often can't fit in an electropolishing bath, and automated mechanical polishing handles large surfaces efficiently.",
       },
     ],
-    content: `Mechanical polishing removes surface material with abrasives (belts, wheels, buffs) to produce a smooth, defined finish, while electropolishing uses an electrochemical bath to dissolve a thin, uniform layer of metal for an ultra-smooth, deburred, corrosion-resistant surface. Mechanical polishing is versatile, cost-effective, and reaches any named finish; electropolishing excels at hygiene, complex geometries, and the lowest Ra. Often the best results combine both: mechanical polishing first, then electropolishing. This guide compares them. At MB Finish Tech, we build mechanical polishing machines in India that deliver the surface finish, and the ideal pre-EP base, your equipment needs.
-
-## Key Takeaways
+    content: `## Key Takeaways
 
 - Mechanical polishing uses abrasives to physically smooth the surface.
 - Electropolishing uses an electrochemical bath to dissolve a thin, uniform metal layer.
@@ -1966,11 +1960,7 @@ Whichever path you take, it starts with a quality mechanical finish. MB Finish T
         answer: "By measuring Ra with a calibrated roughness tester at multiple defined points, and documenting the results along with material, weld, and passivation records for traceability and audits.",
       },
     ],
-    content: `Pharma & Dairy Tank Finishing: Meeting 3-A, ASME BPE & Hygienic Surface Standards
-
-Pharma and dairy tanks need a smooth, low-Ra surface finish because rough surfaces trap product and bacteria, risking contamination. Standards like ASME BPE (for bioprocessing) and 3-A Sanitary Standards (for dairy and food) set maximum Ra values for product-contact surfaces — commonly around Ra 0.5–0.8 µm for mechanically polished surfaces and lower for electropolished. Meeting them requires the right polishing process, attention to welds and dish ends, and verified measurement. This guide explains the standards and how to meet them. At MB Finish Tech, we build tank and dish end polishing machines in India engineered for hygienic finishes.
-
-## Key Takeaways
+    content: `## Key Takeaways
 
 - Pharma and dairy tanks need low-Ra, hygienic finishes to prevent contamination.
 - ASME BPE governs bioprocessing/pharma; 3-A governs dairy and food equipment.
@@ -2147,9 +2137,7 @@ MB Finish Tech builds tank and dish end polishing machines in India engineered f
         answer: "Match it to your main part type (tank, sheet, pipe, utensil), size it to your volume, and ensure it reliably hits your required finish. A machine suited to your work pays back fastest.",
       },
     ],
-    content: `Automating your polishing line pays off when the savings in labour, rework, and wasted material, plus the value of higher throughput and consistent quality, exceed the cost of the machine over time. For most fabricators doing regular stainless steel finishing, that payback comes faster than expected, because manual polishing is slow, labour-intensive, and inconsistent. The tipping point depends on your volume, labour cost, and quality requirements. This guide gives you a framework to work it out. At MB Finish Tech, we build automatic polishing machines in India that help fabricators cut finishing cost and lift output.
-
-## Key Takeaways
+    content: `## Key Takeaways
 
 - Automation pays off when labour, rework, and throughput gains exceed the machine cost over time.
 - Manual polishing has hidden costs: slow output, inconsistency, rework, and labour dependency.
