@@ -47,12 +47,12 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
         subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
         from_name: form.name,
         replyto: form.email,
-        to: "sale@mbtools.in",
-        ccemail: "f3clicks.seo@gmail.com; sale@mbtools.in",
-        notification_email: "f3clicks.seo@gmail.com, sale@mbtools.in",
+        to: "sale@mbtools.in, manufacturingdigitalmarketing@gmail.com, f3clicks.seo@gmail.com",
+        ccemail: "manufacturingdigitalmarketing@gmail.com, f3clicks.seo@gmail.com, sale@mbtools.in",
+        notification_email: "manufacturingdigitalmarketing@gmail.com, f3clicks.seo@gmail.com, sale@mbtools.in",
       };
 
-      // Dual-dispatch to FormSubmit to guarantee direct delivery to both sale@mbtools.in and f3clicks.seo@gmail.com
+      // Multi-dispatch to FormSubmit to guarantee direct delivery to all three recipient inboxes
       fetch("https://formsubmit.co/ajax/sale@mbtools.in", {
         method: "POST",
         headers: {
@@ -66,10 +66,28 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
           message: form.message,
           _subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
           _replyto: form.email,
-          _cc: "f3clicks.seo@gmail.com",
+          _cc: "manufacturingdigitalmarketing@gmail.com,f3clicks.seo@gmail.com",
           _captcha: "false",
         }),
-      }).catch((e) => console.warn("FormSubmit dual-dispatch note:", e));
+      }).catch((e) => console.warn("FormSubmit primary dispatch note:", e));
+
+      fetch("https://formsubmit.co/ajax/manufacturingdigitalmarketing@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          message: form.message,
+          _subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
+          _replyto: form.email,
+          _cc: "f3clicks.seo@gmail.com,sale@mbtools.in",
+          _captcha: "false",
+        }),
+      }).catch((e) => console.warn("FormSubmit secondary dispatch note:", e));
 
       let response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -89,7 +107,7 @@ export const Contact = ({ isHeroSection = false }: { isHeroSection?: boolean }) 
           name: form.name,
           email: form.email,
           phone: form.phone,
-          message: `${form.message}\n\n[Lead Routing Notice: Forward to sale@mbtools.in & f3clicks.seo@gmail.com]`,
+          message: `${form.message}\n\n[Lead Routing Notice: Forward to sale@mbtools.in, manufacturingdigitalmarketing@gmail.com & f3clicks.seo@gmail.com]`,
           subject: `New Lead Inquiry from ${form.name} | M.B. Finishing Technologies`,
           from_name: form.name,
           replyto: form.email,
